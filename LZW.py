@@ -76,6 +76,7 @@ else:
 print ("Enetered string is:",stringToEncode)
 [encoded, dictionary] = encode_lzw(stringToEncode)
 a = [encoded, dictionary]
+print(encoded)
 print("Compressed file generated as compressed.txt")
 output = open("compressed.txt","w+")
 output.write(str(a))
